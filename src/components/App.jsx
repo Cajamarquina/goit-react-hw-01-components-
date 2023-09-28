@@ -1,8 +1,8 @@
 import React from 'react';
 import Profile from './Profile';
 import Statistics from './Statistics';
-import user from './user.json';
-import data from './data.json';
+import user from '../user.json';
+import data from '../data.json';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       />
 
       {/* Render the Statistics component */}
-      <Statistics title="Upload stats" stats={statisticsData} />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 }
